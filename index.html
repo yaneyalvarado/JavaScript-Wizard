@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Wizard</title>
     <link rel="stylesheet" href="assets/style.css">
-    <script defer src="assets/script.js"></script>
+   
 </head>
 
 <body>
@@ -17,10 +17,10 @@
 
     <section class="startpage">
 <h1>Welcome to JavaScript Quiz</h1>
-        <button>Start Page</button>
+        <button class="startbutton">Start Page</button>
     </section>
 
-    <section class="questions">
+    <section class="questions hide">
         <h2>Example questions</h2>
         <div class="questionoptions">
 <button class="question1">
@@ -35,7 +35,20 @@
 <button class="question4">
 
 </button>
-        </div>
+    </div>
     </section>
+    <section class="endpage hide">
+        <form action="" method="get" class="form-example">
+            <div class="form-example">
+              <label for="name">Enter your initials </label>
+              <input type="text" name="initials" id="initials" required>
+            </div>
+            <div class="form-example">
+              <input type="submit" value="submit">
+            </div>
+          </form>  
+        <div class="highscores"></div>
+    </section> 
+    <script defer src="assets/script.js"></script>
 </body>
 </html>
