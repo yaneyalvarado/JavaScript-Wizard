@@ -31,3 +31,15 @@ section {
     box-shadow: gray;
     font-size: 18px;
 }
+
+button {
+    background-color: turquoise;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 10px solid black;
+}
