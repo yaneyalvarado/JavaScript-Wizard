@@ -24,7 +24,7 @@ section {
     text-align: center;
     margin: auto;
     width: 50%;
-    border: 3px solid turquoise;
+    border: 5px solid turquoise;
     padding: 5px;
     box-shadow: 10px solid grey;
     font-size: 18px;
@@ -33,7 +33,7 @@ section {
 button {
     background-color: turquoise;
     color: black;
-    font-size: 12px;
+    font-size: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;

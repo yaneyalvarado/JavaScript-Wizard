@@ -1,6 +1,6 @@
 var questions = [{
-    question: "What is JavaScript" ,
-    options: ["a-1", "a-2" , "a-3" , "a-4"] ,
+    question: "JavaScript is an _____________ language?" ,
+    options: ["A: Object-Oriented", "B: Object-Based" , "C: Procedural" , "D: None of the above"] ,
     answer: "a-2"
 
 },{
