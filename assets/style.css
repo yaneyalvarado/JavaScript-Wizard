@@ -13,9 +13,7 @@ section {
 .header {
     background-color: skyblue;
     color: black;
-    font-size: 20px;
-    font-weight: 250;
-    
+    font-size: 25px;
     display: block;
     margin-top: auto;
     padding: 3px;
@@ -28,7 +26,7 @@ section {
     width: 50%;
     border: 3px solid turquoise;
     padding: 5px;
-    box-shadow: gray;
+    box-shadow: 10px solid grey;
     font-size: 18px;
 }
 
