@@ -3,16 +3,19 @@
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: whitesmoke; 
 }
 
 section {
-    background-color: lavenderblush;
+    background-color: lightgray;
 }
 
 .header {
-    background-color: blueviolet;
+    background-color: skyblue;
+    color: black;
+    font-size: 20px;
     font-weight: 250;
+    
     display: block;
     margin-top: auto;
     padding: 3px;
@@ -20,11 +23,11 @@ section {
 }
 
 .startpage {
-    background-color: purple;
     text-align: center;
+    margin: auto;
     width: 50%;
-    border: 3px solid black;
+    border: 3px solid turquoise;
     padding: 5px;
-    box-shadow: pink;
+    box-shadow: gray;
     font-size: 18px;
 }
