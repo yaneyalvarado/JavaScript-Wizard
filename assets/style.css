@@ -1,3 +1,30 @@
 .hide {
     display: none;
 }
+
+body {
+    background-color: antiquewhite;
+}
+
+section {
+    background-color: lavenderblush;
+}
+
+.header {
+    background-color: blueviolet;
+    font-weight: 250;
+    display: block;
+    margin-top: auto;
+    padding: 3px;
+    border: 3px;
+}
+
+.startpage {
+    background-color: purple;
+    text-align: center;
+    width: 50%;
+    border: 3px solid black;
+    padding: 5px;
+    box-shadow: pink;
+    font-size: 18px;
+}
