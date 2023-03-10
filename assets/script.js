@@ -17,8 +17,8 @@ var questions = [{
     options: ["A: function myFunction()", "B: function:myFunction()" , "C: function = myFunction()" , "D: function myFunction[] "] ,
     answer: "A: function myFunction()"
 },{
-    question: "How do you create an if statement in JavaScript?" ,
-    options: ["A: ", "B: " , "C: " , "D: "] ,
+    question: "How do you write an if statement in JavaScript?" ,
+    options: ["A: if(i == 5)", "B: " , "C: " , "D: "] ,
     answer: "A: function myFunction()"
 
 }]
