@@ -33,6 +33,11 @@ var questions = [{
     options: "A: 0" , "B: 1" , "C: A" , "D: none of the above" ,
     answer: "A: 0"
 
+}, {
+     question: "How to write an IF statement in JavaScript?" ,
+     options: "A: if i == 5 then" , "B: if i = 5 then" , "C: if(i == 5)" , "D: if[i = 5]" ,
+     answer: "C: if(i == 5)"
+
 
 }]
 var questionCount = 0
