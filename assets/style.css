@@ -14,10 +14,11 @@ section {
     background-color: skyblue;
     color: black;
     font-size: 25px;
+    font-weight: bold;
     display: block;
-    margin-top: auto;
-    padding: 3px;
+    padding: 20px;
     border: 3px;
+    margin-bottom: 40px;
 }
 
 .startpage {
