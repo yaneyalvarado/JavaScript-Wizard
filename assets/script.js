@@ -12,14 +12,27 @@ var questions = [{
     question: "Where is the correct place to insert a JavaScript?" ,
     options: ["A: The <head> section", "B: Both the <head> section and the <body> section are correct" , "C: The <body> section" , "D: None of the above"] ,
     answer: "C: JavaScript is inserted in the <body> section"
+
 },{
     question: "How do you create a function in JavaScript?" ,
     options: ["A: function myFunction()", "B: function:myFunction()" , "C: function = myFunction()" , "D: function myFunction[] "] ,
     answer: "A: function myFunction()"
+
 },{
-    question: "How do you write an if statement in JavaScript?" ,
-    options: ["A: if(i == 5)", "B: " , "C: " , "D: "] ,
-    answer: "A: function myFunction()"
+    question: "Arrays in JavaScript can be used to store ____________." ,
+    options: ["A: numbers and strings", "B: other arrays " , "C: booleans " , "D: all of the above"] ,
+    answer: "B: other arrays"
+
+},{ 
+    question: "To see if two variables are equal in an if / else statement you would use _____________." ,
+    options: ["A: numbers and strings", "B: other arrays " , "C: booleans " , "D: all of the above"] ,
+    answer: "B: other arrays"
+
+},{
+    question: "The first index of an array is _________." ,
+    options: "A: 0" , "B: 1" , "C: A" , "D: none of the above" ,
+    answer: "A: 0"
+
 
 }]
 var questionCount = 0
