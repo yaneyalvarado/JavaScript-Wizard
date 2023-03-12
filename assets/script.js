@@ -30,13 +30,23 @@ var questions = [{
 
 },{
     question: "The first index of an array is _________." ,
-    options: "A: 0" , "B: 1" , "C: A" , "D: none of the above" ,
+    options: ["A: 0" , "B: 1" , "C: A" , "D: none of the above"] ,
     answer: "A: 0"
 
 }, {
-     question: "How to write an IF statement in JavaScript?" ,
-     options: "A: if i == 5 then" , "B: if i = 5 then" , "C: if(i == 5)" , "D: if[i = 5]" ,
-     answer: "C: if(i == 5)"
+    question: "How to write an IF statement in JavaScript?" ,
+    options: ["A: if i == 5 then" , "B: if i = 5 then" , "C: if(i == 5)" , "D: if[i = 5]"] ,
+    answer: "C: if(i == 5)"
+
+},{
+    question: "How do you call a function names myFunction?" ,
+    options: "A: callmyFunction()" , "B: call function myFunction()" , "C: myFunction()" , "D: Call myFunction" ,
+    answer: "C: myFunction()"
+
+},{
+   question: "Which of the following function of Boolean object returns a string containing the source of the boolean object?" ,
+   options: "A: toSource()" , "B:valueOf()" , "C:toString()" , "D:trueString" ,
+   answer: "A: toSource()"
 
 
 }]
