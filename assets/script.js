@@ -64,12 +64,9 @@ displayquestions()
 function displayquestions() {
     questiontitle.textContent= questions[questionCount].question
     for (let i = 0; i < 4; i++) {
-        var questionoption = document.querySelector(".question" + (i+1))  
+        var questionoption = document.getElementById("question" + (i+1))  
         questionoption.value= questions[questionCount].options[i]
         questionoption.textContent= questions[questionCount].options[i]
-        questionoption.addEventListener("click" , function() {
-        checkScores()
-        })
     }
 }
 
@@ -80,3 +77,9 @@ function checkScores() {
     }
    
 }
+
+document.querySelectorAll('.question1').forEach(item => {
+    item.addEventListener('click', event => {
+        checkScores();
+    })
+})
