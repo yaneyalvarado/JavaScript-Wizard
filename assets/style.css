@@ -46,3 +46,11 @@ button {
     padding: 20px;
     box-shadow: 10px solid black;
 }
+
+.endpage {
+    background-color: turquoise;
+    color: black;
+    font-size: 15px;
+    justify-content: center;
+    border: 5px solid gray;
+}
