@@ -40,12 +40,12 @@ var questions = [{
 
 },{
     question: "How do you call a function names myFunction?" ,
-    options: "A: callmyFunction()" , "B: call function myFunction()" , "C: myFunction()" , "D: Call myFunction" ,
+    options: ["A: callmyFunction()" , "B: call function myFunction()" , "C:myFunction()" , "D: Call myFunction"] ,
     answer: "C: myFunction()"
 
 },{
    question: "Which of the following function of Boolean object returns a string containing the source of the boolean object?" ,
-   options: "A: toSource()" , "B:valueOf()" , "C:toString()" , "D:trueString" ,
+   options: ["A: toSource()" , "B:valueOf()" , "C:toString()" , "D:trueString"] ,
    answer: "A: toSource()"
 
 
