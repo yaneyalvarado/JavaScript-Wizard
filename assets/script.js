@@ -45,7 +45,7 @@ var questions = [{
 
 },{
    question: "Which of the following function of Boolean object returns a string containing the source of the boolean object?" ,
-   options: ["A: toSource()" , "B:valueOf()" , "C:toString()" , "D:trueString"] ,
+   options: ["A: toSource()" , "B: valueOf()" , "C: toString()" , "D:trueString"] ,
    answer: "A: toSource()"
 
 
