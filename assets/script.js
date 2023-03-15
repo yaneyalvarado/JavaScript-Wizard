@@ -67,9 +67,9 @@ function displayQuestion(questionOptions) {
     questiontitle.textContent= question.question
     for (let i = 0; i < 4; i++) {
         var option = document.getElementById("question" + (i+1))  
-        questionoption.value= question.options[i]
-        questionoption.textContent= question.options[i]
-        questionoption.addEventListener("click" , function() {
+        questionOptions.value= question.options[i]
+        questionOptions.textContent= question.options[i]
+        questionOptions.addEventListener("click" , function() {
             if(question.options[i ] === question.answer) {
                 displayCorrect()
             } else { 
