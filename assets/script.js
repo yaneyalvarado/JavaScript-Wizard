@@ -60,11 +60,11 @@ var questionOptions = document.querySelector(".questionoptions")
 startbutton.addEventListener("click" , function() {
     startpage.classList.add("hide")
 questionsection.classList.remove("hide")
-displayQuestion(questions[questionCount])
+displayQuestion(questions[questionOptions])
 })
 
 function displayQuestion(questionOptions) {
-    questiontitle.textContent= question.questionOptions
+    questiontitle.textContent= questions.questionOptions
     for (let i = 0; i < 4; i++) {
         var questions = document.getElementById("question" + (i+1))  
         questionOptions.value= questions.questionOptions[i]
