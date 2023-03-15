@@ -1,7 +1,7 @@
 var questions = [{
     question: "JavaScript is a _____________ language?" ,
     options: ["A: Markup language", "B: Style" , "C: Procedural" , "D: Scripting"] ,
-    answer: "D: JavaScript is a scripting language."
+    answer: "D: Scripting"
 
 },{
     question: "Inside which HTML element do we put the JavaScript?" ,
@@ -55,31 +55,52 @@ var startpage = document.querySelector(".startpage")
 var startbutton = document.querySelector(".startbutton")
 var questionsection = document.querySelector(".questions")
 var questiontitle = document.querySelector(".questiontitle")
+var questionOptions = document.querySelector(".questionoptions")
+
 startbutton.addEventListener("click" , function() {
     startpage.classList.add("hide")
 questionsection.classList.remove("hide")
-displayquestions()
+displayQuestion(questions[questionCount])
 })
 
-function displayquestions() {
-    questiontitle.textContent= questions[questionCount].question
+function displayQuestion(questionOptions) {
+    questiontitle.textContent= question.question
     for (let i = 0; i < 4; i++) {
-        var questionoption = document.getElementById("question" + (i+1))  
-        questionoption.value= questions[questionCount].options[i]
-        questionoption.textContent= questions[questionCount].options[i]
+        var option = document.getElementById("question" + (i+1))  
+        questionoption.value= question.options[i]
+        questionoption.textContent= question.options[i]
+        questionoption.addEventListener("click" , function() {
+            if(question.options[i ] === question.answer) {
+                displayCorrect()
+            } else { 
+                displayWrong() 
+            }
+            
+        }) 
+    
     }
 }
 
 function checkScores() {
     if (questionCount < questions.length) {
         questionCount ++  
-        displayquestions()
+        displayQuestion(questions[questionCount])
     }
    
 }
 
-document.querySelectorAll('.question1').forEach(item => {
-    item.addEventListener('click', event => {
-        checkScores();
-    })
-})
+// document.querySelectorAll('.question1').forEach(item => {
+//     item.addEventListener('click', event => {
+//         checkScores();
+//     })
+// })
+
+function displayCorrect() {
+console.log("correct")
+checkScores()
+}
+
+function displayWrong() {
+console.log("wrong")
+checkScores()
+}
