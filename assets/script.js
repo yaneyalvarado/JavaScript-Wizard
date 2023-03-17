@@ -11,7 +11,7 @@ var questions = [{
 },{
     question: "Where is the correct place to insert a JavaScript?" ,
     options: ["A: The <head> section", "B: Both the <head> section and the <body> section are correct" , "C: The <body> section" , "D: None of the above"] ,
-    answer: "C: JavaScript is inserted in the <body> section"
+    answer: "C: The <body> section"
 
 },{
     question: "How do you create a function in JavaScript?" ,
@@ -72,8 +72,8 @@ function displayQuestion(currentQuestion) {
         answerButton.value= currentQuestion.options[i]
         answerButton.textContent= currentQuestion.options[i]
         answerButton.addEventListener("click" , function(event) {
-            console.log(questionCount)
-            if(event.target.innnerText === currentQuestion.answer) {
+            console.log(event.target.innerText , questions[questionCount].answer)
+            if(event.target.innerText === questions[questionCount].answer) {
                 displayCorrect()
             } else { 
                 displayWrong() 
