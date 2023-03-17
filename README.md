@@ -2,9 +2,9 @@
 A timed quiz based on JavaScript fundamentals. 
 
 ## Description
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
+As a coding boot camp student
+I want to take a timed quiz on JavaScript fundamentals that stores high scores
+So that I can gauge my progress compared to my peers
 
 ## Instructions
 GIVEN I am taking a code quiz

@@ -60,17 +60,18 @@ var questionOptions = document.querySelector(".questionoptions")
 startbutton.addEventListener("click" , function() {
     startpage.classList.add("hide")
 questionsection.classList.remove("hide")
-displayQuestion(questions[questionOptions])
+displayQuestion(questions[0])
 })
 
-function displayQuestion(questionOptions) {
-    questiontitle.textContent= questions.questionOptions
-    for (let i = 0; i < 4; i++) {
-        var questions = document.getElementById("question" + (i+1))  
-        questionOptions.value= questions.questionOptions[i]
-        questionOptions.textContent= questions.questionOptions[i]
-        questionOptions.addEventListener("click" , function() {
-            if(questionOptions[i ] === questionOptions.answer) {
+function displayQuestion(currentQuestion) {
+    console.log(currentQuestion) 
+    questiontitle.textContent= currentQuestion.question
+    for (let i = 0; i > currentQuestion.options.length; i++) {
+        var answerButton = document.getElementById("question" + (i+1))  
+        answerButton.value= currentQuestion.options[i]
+        answerButton.textContent= currentQuestion.options[i]
+        answerButton.addEventListener("click" , function() {
+            if(questionOptions[i ] === currentQuestion.answer) {
                 displayCorrect()
             } else { 
                 displayWrong() 
