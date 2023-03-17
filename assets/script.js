@@ -66,7 +66,8 @@ displayQuestion(questions[0])
 function displayQuestion(currentQuestion) {
     console.log(currentQuestion) 
     questiontitle.textContent= currentQuestion.question
-    for (let i = 0; i > currentQuestion.options.length; i++) {
+    for (let i = 0; i < currentQuestion.options.length; i++) {
+        console.log(i)
         var answerButton = document.getElementById("question" + (i+1))  
         answerButton.value= currentQuestion.options[i]
         answerButton.textContent= currentQuestion.options[i]
