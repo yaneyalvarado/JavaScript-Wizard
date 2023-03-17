@@ -67,12 +67,13 @@ function displayQuestion(currentQuestion) {
     console.log(currentQuestion) 
     questiontitle.textContent= currentQuestion.question
     for (let i = 0; i < currentQuestion.options.length; i++) {
-        console.log(i)
+        // console.log(i)
         var answerButton = document.getElementById("question" + (i+1))  
         answerButton.value= currentQuestion.options[i]
         answerButton.textContent= currentQuestion.options[i]
-        answerButton.addEventListener("click" , function() {
-            if(questionOptions[i ] === currentQuestion.answer) {
+        answerButton.addEventListener("click" , function(event) {
+            console.log(questionCount)
+            if(event.target.innnerText === currentQuestion.answer) {
                 displayCorrect()
             } else { 
                 displayWrong() 
