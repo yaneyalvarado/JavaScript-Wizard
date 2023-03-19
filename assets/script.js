@@ -57,6 +57,7 @@ var questionsection = document.querySelector(".questions")
 var questiontitle = document.querySelector(".questiontitle")
 var questionOptions = document.querySelectorAll(".question1")
 var timer = document.getElementById("timer")
+var timesUp = document.getElementById("timesUp")
 
 startbutton.addEventListener("click" , function() {
     startpage.classList.add("hide")
