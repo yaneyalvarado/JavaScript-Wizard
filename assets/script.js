@@ -58,6 +58,7 @@ var questiontitle = document.querySelector(".questiontitle")
 var questionOptions = document.querySelectorAll(".question1")
 var timer = document.getElementById("timer")
 var timesUp = document.getElementById("timesUp")
+var totalTime = 151
 
 startbutton.addEventListener("click" , function() {
     startpage.classList.add("hide")
@@ -79,7 +80,9 @@ function displayQuestion(currentQuestion) {
             } else { 
                 displayWrong() 
             }
-         
+         var timer = setInterval(function() {
+
+         })
         }) 
     
     }
