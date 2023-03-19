@@ -55,7 +55,8 @@ var startpage = document.querySelector(".startpage")
 var startbutton = document.querySelector(".startbutton")
 var questionsection = document.querySelector(".questions")
 var questiontitle = document.querySelector(".questiontitle")
-var questionOptions = document.querySelector(".questionoptions")
+var questionOptions = document.querySelectorAll(".question1")
+
 
 startbutton.addEventListener("click" , function() {
     startpage.classList.add("hide")
@@ -64,15 +65,14 @@ displayQuestion(questions[0])
 })
 
 function displayQuestion(currentQuestion) {
-    console.log(currentQuestion) 
+    // console.log(currentQuestion) 
     questiontitle.textContent= currentQuestion.question
     for (let i = 0; i < currentQuestion.options.length; i++) {
-        // console.log(i)
         var answerButton = document.getElementById("question" + (i+1))  
         answerButton.value= currentQuestion.options[i]
         answerButton.textContent= currentQuestion.options[i]
         answerButton.addEventListener("click" , function(event) {
-            console.log(event.target.innerText , questions[questionCount].answer)
+            console.log("clicked")
             if(event.target.innerText === questions[questionCount].answer) {
                 displayCorrect()
             } else { 
