@@ -56,7 +56,7 @@ var startbutton = document.querySelector(".startbutton")
 var questionsection = document.querySelector(".questions")
 var questiontitle = document.querySelector(".questiontitle")
 var questionOptions = document.querySelectorAll(".question1")
-
+var timer = document.getElementById("timer")
 
 startbutton.addEventListener("click" , function() {
     startpage.classList.add("hide")
@@ -78,7 +78,7 @@ function displayQuestion(currentQuestion) {
             } else { 
                 displayWrong() 
             }
-            
+         
         }) 
     
     }
