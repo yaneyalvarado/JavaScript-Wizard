@@ -59,7 +59,7 @@ var questionOptions = document.querySelectorAll(".question1")
 var timer = document.getElementById("timer")
 var timeLeft = document.getElementById("timeLeft")
 var timesUp = document.getElementById("timesUp")
-var totalTime = 151
+var totalTime = 120
 
 startbutton.addEventListener("click" , function() {
     startpage.classList.add("hide")
