@@ -57,6 +57,7 @@ var questionsection = document.querySelector(".questions")
 var questiontitle = document.querySelector(".questiontitle")
 var questionOptions = document.querySelectorAll(".question1")
 var timer = document.getElementById("timer")
+var timeLeft = document.getElementById("timeLeft")
 var timesUp = document.getElementById("timesUp")
 var totalTime = 151
 
