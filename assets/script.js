@@ -81,7 +81,11 @@ function displayQuestion(currentQuestion) {
                 displayWrong() 
             }
          var timer = setInterval(function() {
-
+             totalTime--;
+             timeLeft.textContent = totalTime;
+             if(totalTime <= 0) {
+                clearInterval(timer);
+             }
          })
         }) 
     
