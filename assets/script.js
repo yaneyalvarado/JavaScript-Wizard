@@ -79,6 +79,9 @@ startbutton.addEventListener("click" , function() {
        timeLeft.textContent = totalTime;
        if(totalTime <= 0) {
         clearInterval(timer);
+        if (questionsection < questionCount.length -1) {
+            gameOver();
+        }
       }
     }, 1000);
     
