@@ -62,17 +62,19 @@ var timesUp = document.getElementById("timesUp")
 var totalTime = 120
 
 startbutton.addEventListener("click" , function() {
+    startpage.classList.add("hide")
+        questionsection.classList.remove("hide");
+           
     var timer = setInterval(function() {
       totalTime--;
        timeLeft.textContent = totalTime;
-            if(totalTime <= 0) {
-                clearInterval(timer);
-             }
-         })
-         startpage.classList.add("hide")
-           questionsection.classList.remove("hide")
-              displayQuestion(questions[0])
-})
+       if(totalTime <= 0) {
+        clearInterval(timer);
+      }
+    }, 1000);
+        d
+    displayQuestion(questions[0])
+});
 
 function displayQuestion(currentQuestion) {
     // console.log(currentQuestion) 
