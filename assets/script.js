@@ -58,7 +58,6 @@ var questiontitle = document.querySelector(".questiontitle")
 var questionOptions = document.querySelectorAll(".question1")
 var timer = document.getElementById("timer")
 var timeLeft = document.getElementById("timeLeft")
-var timesUp = document.getElementById("timesUp")
 var totalTime = 120
 var button1 = document.getElementById("question1")
 var button2 = document.getElementById("question2")
@@ -73,18 +72,17 @@ button4.addEventListener("click",buttonClicked);
 startbutton.addEventListener("click" , function() {
     startpage.classList.add("hide")
         questionsection.classList.remove("hide");
-           
+    
     var timer = setInterval(function() {
       totalTime--;
        timeLeft.textContent = totalTime;
        if(totalTime <= 0) {
         clearInterval(timer);
-        if (questionsection < questionCount.length -1) {
-            gameOver();
-        }
+        gameOver();
       }
+      questionCount ++;
     }, 1000);
-    
+    questionCount = 0
     displayQuestion(questions[0])
 });
 
