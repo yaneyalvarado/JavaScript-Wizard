@@ -60,6 +60,15 @@ var timer = document.getElementById("timer")
 var timeLeft = document.getElementById("timeLeft")
 var timesUp = document.getElementById("timesUp")
 var totalTime = 120
+var button1 = document.getElementById("question1")
+var button2 = document.getElementById("question2")
+var button3 = document.getElementById("question3")
+var button4 = document.getElementById("question4")
+button1.addEventListener("click",buttonClicked);
+button2.addEventListener("click",buttonClicked);
+button3.addEventListener("click",buttonClicked);
+button4.addEventListener("click",buttonClicked);
+
 
 startbutton.addEventListener("click" , function() {
     startpage.classList.add("hide")
