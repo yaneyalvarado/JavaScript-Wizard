@@ -62,9 +62,16 @@ var timesUp = document.getElementById("timesUp")
 var totalTime = 120
 
 startbutton.addEventListener("click" , function() {
-    startpage.classList.add("hide")
-questionsection.classList.remove("hide")
-displayQuestion(questions[0])
+    var timer = setInterval(function() {
+      totalTime--;
+       timeLeft.textContent = totalTime;
+            if(totalTime <= 0) {
+                clearInterval(timer);
+             }
+         })
+         startpage.classList.add("hide")
+           questionsection.classList.remove("hide")
+              displayQuestion(questions[0])
 })
 
 function displayQuestion(currentQuestion) {
@@ -81,13 +88,7 @@ function displayQuestion(currentQuestion) {
             } else { 
                 displayWrong() 
             }
-         var timer = setInterval(function() {
-             totalTime--;
-             timeLeft.textContent = totalTime;
-             if(totalTime <= 0) {
-                clearInterval(timer);
-             }
-         })
+         
         }) 
     
     }
