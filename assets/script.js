@@ -83,17 +83,19 @@ function displayQuestion(currentQuestion) {
         var answerButton = document.getElementById("question" + (i+1))  
         answerButton.value= currentQuestion.options[i]
         answerButton.textContent= currentQuestion.options[i]
-        answerButton.addEventListener("click" , function(event) {
-            console.log("clicked")
-            if(event.target.innerText === questions[questionCount].answer) {
-                displayCorrect()
-            } else { 
-                displayWrong() 
-            }
-         
-        }) 
-    
+          
     }
+}
+
+function buttonClicked(event){
+    event.stopPropagation();
+    console.log("clicked")
+    if(event.target.innerText === questions[questionCount].answer) {
+        displayCorrect()
+    } else { 
+        displayWrong() 
+    }
+
 }
 
 function checkScores() {
