@@ -72,7 +72,7 @@ startbutton.addEventListener("click" , function() {
         clearInterval(timer);
       }
     }, 1000);
-        d
+    
     displayQuestion(questions[0])
 });
 
