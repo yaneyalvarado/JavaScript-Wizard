@@ -149,4 +149,7 @@ function gameOver() {
 
 function storeHighScores(event) {
     event.preventDefault();
+    if (initialInput.value === "") {
+        alert("Please enter your intials!")
+    }
 }
