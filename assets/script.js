@@ -59,6 +59,7 @@ var questionOptions = document.querySelectorAll(".question1")
 var timer = document.getElementById("timer")
 var timeLeft = document.getElementById("timeLeft")
 var totalTime = 100
+
 var button1 = document.getElementById("question1")
 var button2 = document.getElementById("question2")
 var button3 = document.getElementById("question3")
@@ -67,7 +68,9 @@ button1.addEventListener("click",buttonClicked);
 button2.addEventListener("click",buttonClicked);
 button3.addEventListener("click",buttonClicked);
 button4.addEventListener("click",buttonClicked);
-var submit = document.getElementById("submit")
+
+var finalScore = document.getElementById("finalScore")
+var initialInput = document.getElementById("initialInput")
 submit.addEventListener("click",buttonClicked);
 
 startbutton.addEventListener("click" , function() {
