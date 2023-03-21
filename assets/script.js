@@ -59,6 +59,7 @@ var questionOptions = document.querySelectorAll(".question1");
 var timer = document.getElementById("timer");
 var timeLeft = document.getElementById("timeLeft");
 var totalTime = 100
+var endpage = document.querySelector(".endpage")
 
 var button1 = document.getElementById("question1");
 var button2 = document.getElementById("question2");
@@ -68,7 +69,7 @@ button1.addEventListener("click",buttonClicked);
 button2.addEventListener("click",buttonClicked);
 button3.addEventListener("click",buttonClicked);
 button4.addEventListener("click",buttonClicked);
-
+var timer = ""
 var finalScore = document.getElementById("finalScore");
 var initialInput = document.getElementById("initialInput");
 var highScores = document.getElementById("highScores");
@@ -81,7 +82,7 @@ startbutton.addEventListener("click" , function() {
     startpage.classList.add("hide")
         questionsection.classList.remove("hide");
     
-    var timer = setInterval(function() {
+    timer = setInterval(function() {
       totalTime--;
        timeLeft.textContent = totalTime;
        if(totalTime <= 0) {
@@ -119,12 +120,6 @@ function buttonClicked(event){
         timeLeft.textContent = totalTime;
     
     }
-
-    if (questions < questions.length) {
-        nextQuestion();
-    } else {
-        gameOver();
-    }
 }
 
 function checkScores() {
@@ -149,9 +144,10 @@ function gameOver() {
     clearInterval(timer)
     startpage.style.display = "none";
     startbutton.style.display = "none";
-    questions.style.display = "none";
+    questionsection.style.display = "none";
     questiontitle.style.display = "none";
     question1.style.display = "none";
+    endpage.style.display = "block";
 }
 
 function storeHighScores(event) {
