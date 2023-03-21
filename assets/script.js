@@ -144,7 +144,7 @@ checkScores()
 
 function gameOver() {
     clearInterval(timer)
-    finalScore.textContent = correctAns;
+    finalScore.textContent = answerButton
 }
 
 function storeHighScores(event) {
@@ -163,3 +163,8 @@ if (savedHighScores === null) {
 } else {
     scoresArray = JSON.parse(savedHighScores)
 }
+
+var userScore = {
+    intials: initialInput.value,
+    score: finalScore.textContent
+};
