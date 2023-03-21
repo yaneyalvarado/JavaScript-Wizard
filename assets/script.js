@@ -209,5 +209,6 @@ highScores.addEventListener("click" , function(){
 
 clearHighScoreButton.addEventListener("click" , function() {
     window.localStorage.removeItem("high scores");
+    listOfHighScores.innerHTML = "High Scores Cleared!";
 })
 
