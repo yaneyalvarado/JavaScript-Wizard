@@ -150,6 +150,16 @@ function gameOver() {
 function storeHighScores(event) {
     event.preventDefault();
     if (initialInput.value === "") {
-        alert("Please enter your intials!")
+        alert("Please enter your intials!");
+        return;
     }
+}
+
+var savedHighScores = localStorage.getItem("high scores");
+var scoresArray;
+
+if (savedHighScores === null) {
+    scoresArray = [];
+} else {
+    scoresArray = JSON.parse(savedHighScores)
 }
