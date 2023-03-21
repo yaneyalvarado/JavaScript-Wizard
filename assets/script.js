@@ -73,6 +73,7 @@ var finalScore = document.getElementById("finalScore");
 var initialInput = document.getElementById("initialInput");
 var highScores = document.getElementById("highScores");
 var listOfHighScores = document.getElementById("listOfHighScores");
+var goBackButton = document.getElementById ("goBackButton")
 submit.addEventListener("click",buttonClicked);
 
 startbutton.addEventListener("click" , function() {
@@ -200,5 +201,10 @@ var savedHighScores = localStorage.getItem("high scores");
 initialInput.addEventListener("click", function(){
     storeHighScores(event);
 });
+
+highScores.addEventListener("click" , function(){
+    showHighScros(event);
+});
+
 
 
