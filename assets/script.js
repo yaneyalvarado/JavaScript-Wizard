@@ -74,6 +74,7 @@ var initialInput = document.getElementById("initialInput");
 var highScores = document.getElementById("highScores");
 var listOfHighScores = document.getElementById("listOfHighScores");
 var goBackButton = document.getElementById ("goBackButton")
+var clearHighScoreButton = document.getElementById ("clearHighScoreButton")
 submit.addEventListener("click",buttonClicked);
 
 startbutton.addEventListener("click" , function() {
@@ -206,5 +207,7 @@ highScores.addEventListener("click" , function(){
     showHighScros(event);
 });
 
-
+clearHighScoreButton.addEventListener("click" , function() {
+    window.localStorage.removeItem("high scores");
+})
 
