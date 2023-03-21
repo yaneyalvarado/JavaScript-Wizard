@@ -190,6 +190,7 @@ function showHighScores( {
        var storedHighScores = JSON.parse(savedHighScores);
 
        for (; i < storedHighScores.length; i++) {
+        var eachNewHighScore = document.createElement("p");
         
         
        }
