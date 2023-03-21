@@ -146,3 +146,7 @@ function gameOver() {
     clearInterval(timer)
     finalScore.textContent = correctAns;
 }
+
+function storeHighScores(event) {
+    event.preventDefault();
+}
