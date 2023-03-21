@@ -67,8 +67,8 @@ button1.addEventListener("click",buttonClicked);
 button2.addEventListener("click",buttonClicked);
 button3.addEventListener("click",buttonClicked);
 button4.addEventListener("click",buttonClicked);
-// var submit = document.getElementById("submit")
-// submit.addEventListener("click",;
+var submit = document.getElementById("submit")
+submit.addEventListener("click",buttonClicked);
 
 startbutton.addEventListener("click" , function() {
     startpage.classList.add("hide")
@@ -139,5 +139,5 @@ checkScores()
 
 function gameOver() {
     clearInterval(timer)
-    
+    // button.classList.remove("hide");
 }
