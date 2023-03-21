@@ -51,26 +51,28 @@ var questions = [{
 
 }]
 var questionCount = 0
-var startpage = document.querySelector(".startpage")
-var startbutton = document.querySelector(".startbutton")
-var questionsection = document.querySelector(".questions")
-var questiontitle = document.querySelector(".questiontitle")
-var questionOptions = document.querySelectorAll(".question1")
-var timer = document.getElementById("timer")
-var timeLeft = document.getElementById("timeLeft")
+var startpage = document.querySelector(".startpage");
+var startbutton = document.querySelector(".startbutton");
+var questionsection = document.querySelector(".questions");
+var questiontitle = document.querySelector(".questiontitle");
+var questionOptions = document.querySelectorAll(".question1");
+var timer = document.getElementById("timer");
+var timeLeft = document.getElementById("timeLeft");
 var totalTime = 100
 
-var button1 = document.getElementById("question1")
-var button2 = document.getElementById("question2")
-var button3 = document.getElementById("question3")
-var button4 = document.getElementById("question4")
+var button1 = document.getElementById("question1");
+var button2 = document.getElementById("question2");
+var button3 = document.getElementById("question3");
+var button4 = document.getElementById("question4");
 button1.addEventListener("click",buttonClicked);
 button2.addEventListener("click",buttonClicked);
 button3.addEventListener("click",buttonClicked);
 button4.addEventListener("click",buttonClicked);
 
-var finalScore = document.getElementById("finalScore")
-var initialInput = document.getElementById("initialInput")
+var finalScore = document.getElementById("finalScore");
+var initialInput = document.getElementById("initialInput");
+var highScores = document.getElementById("highScores");
+var listOfHighScores = document.getElementById("listOfHighScores");
 submit.addEventListener("click",buttonClicked);
 
 startbutton.addEventListener("click" , function() {
@@ -142,5 +144,5 @@ checkScores()
 
 function gameOver() {
     clearInterval(timer)
-    // button.classList.remove("hide");
+    finalScore.textContent = correctAns;
 }
