@@ -57,7 +57,7 @@ var questionsection = document.querySelector(".questions")
 var questiontitle = document.querySelector(".questiontitle")
 var questionOptions = document.querySelectorAll(".question1")
 var timer = document.getElementById("timer")
-// var timeLeft = document.getElementById("timeLeft")
+var timeLeft = document.getElementById("timeLeft")
 var totalTime = 100
 
 var button1 = document.getElementById("question1")
