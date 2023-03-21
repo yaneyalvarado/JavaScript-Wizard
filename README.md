@@ -26,6 +26,7 @@ So that I can gauge my progress compared to my peers
 ![Endpage](https://user-images.githubusercontent.com/123707509/226524245-6f7106d9-c07e-4693-8fde-5a5af4d196f9.png)
 
 ## Deployment
-
+https://github.com/yaneyalvarado/JavaScript-Wizard
 
 ## GitHub
+https://github.com/yaneyalvarado/JavaScript-Wizard
