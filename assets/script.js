@@ -94,7 +94,6 @@ startbutton.addEventListener("click" , function() {
 });
 
 function displayQuestion(currentQuestion) {
-    // console.log(currentQuestion) 
     if (questionCount < questions.length) {
          questiontitle.textContent= currentQuestion.question
     for (let i = 0; i < currentQuestion.options.length; i++) {
@@ -116,8 +115,16 @@ function buttonClicked(event){
         displayCorrect()
     } else { 
         displayWrong() 
+        totalTime -= 5;
+        timeLeft.textContent = totalTime;
+    
     }
 
+    if (questions < questions.length) {
+        nextQuestion();
+    } else {
+        gameOver();
+    }
 }
 
 function checkScores() {
@@ -127,12 +134,6 @@ function checkScores() {
     }
    
 }
-
-// document.querySelectorAll('.question1').forEach(item => {
-//     item.addEventListener('click', event => {
-//         checkScores();
-//     })
-// })
 
 function displayCorrect() {
 console.log("correct")
@@ -146,7 +147,11 @@ checkScores()
 
 function gameOver() {
     clearInterval(timer)
-    finalScore.textContent = questions.answer
+    startpage.style.display = "none";
+    startbutton.style.display = "none";
+    questions.style.display = "none";
+    questiontitle.style.display = "none";
+    question1.style.display = "none";
 }
 
 function storeHighScores(event) {
@@ -187,10 +192,10 @@ function showHighScores() {
        if (savedHighScores === null) {
         return;
        }
-       console.log(savedHighScores);
+    //    console.log(savedHighScores);
 
-       var storedHighScores = JSON.parse(savedHighScores);
-       console.log(storedHighScores)
+    //    var storedHighScores = JSON.parse(savedHighScores);
+    //    console.log(storedHighScores)
 
     //    for (i = 0; i< storedHighScores.length; i++) {
     //     var eachNewHighScore = document.createElement("p");
