@@ -191,7 +191,8 @@ function showHighScores( {
 
        for (; i < storedHighScores.length; i++) {
         var eachNewHighScore = document.createElement("p");
-        
+        eachNewHighScore.innerHTML = storedHighScores[i].initials + ":" + storedHighScores[i].score;
+        listOfHighScores.appendChild(eachNewHighScore);
         
        }
 })
