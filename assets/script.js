@@ -168,3 +168,6 @@ var userScore = {
     intials: initialInput.value,
     score: finalScore.textContent
 };
+
+console.log(userScore);
+scoresArray.push(userScore);
