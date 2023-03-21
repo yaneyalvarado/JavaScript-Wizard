@@ -58,7 +58,7 @@ var questiontitle = document.querySelector(".questiontitle")
 var questionOptions = document.querySelectorAll(".question1")
 var timer = document.getElementById("timer")
 var timeLeft = document.getElementById("timeLeft")
-var totalTime = 120
+var totalTime = 100
 var button1 = document.getElementById("question1")
 var button2 = document.getElementById("question2")
 var button3 = document.getElementById("question3")
@@ -67,7 +67,8 @@ button1.addEventListener("click",buttonClicked);
 button2.addEventListener("click",buttonClicked);
 button3.addEventListener("click",buttonClicked);
 button4.addEventListener("click",buttonClicked);
-
+// var submit = document.getElementById("submit")
+// submit.addEventListener("click",;
 
 startbutton.addEventListener("click" , function() {
     startpage.classList.add("hide")
@@ -80,7 +81,6 @@ startbutton.addEventListener("click" , function() {
         clearInterval(timer);
         gameOver();
       }
-      questionCount ++;
     }, 1000);
     questionCount = 0
     displayQuestion(questions[0])
@@ -88,18 +88,23 @@ startbutton.addEventListener("click" , function() {
 
 function displayQuestion(currentQuestion) {
     // console.log(currentQuestion) 
-    questiontitle.textContent= currentQuestion.question
+    if (questionCount < questions.length) {
+         questiontitle.textContent= currentQuestion.question
     for (let i = 0; i < currentQuestion.options.length; i++) {
         var answerButton = document.getElementById("question" + (i+1))  
         answerButton.value= currentQuestion.options[i]
         answerButton.textContent= currentQuestion.options[i]
           
     }
+} else {
+    gameOver()
+}
 }
 
 function buttonClicked(event){
     event.stopPropagation();
     console.log("clicked")
+    console.log(questionCount)
     if(event.target.innerText === questions[questionCount].answer) {
         displayCorrect()
     } else { 
@@ -130,4 +135,9 @@ checkScores()
 function displayWrong() {
 console.log("wrong")
 checkScores()
+}
+
+function gameOver() {
+    clearInterval(timer)
+    
 }
