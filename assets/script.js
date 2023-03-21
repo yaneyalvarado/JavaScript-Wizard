@@ -144,7 +144,7 @@ checkScores()
 
 function gameOver() {
     clearInterval(timer)
-    finalScore.textContent = answerButton
+    finalScore.textContent = questions.answer
 }
 
 function storeHighScores(event) {
@@ -175,25 +175,30 @@ var savedHighScores = localStorage.getItem("high scores");
     var scoresArrayString = JSON.stringify(scoresArray);
     window.localStorage.setItem("high scores", scoresArrayString);
     
-    showHighScores(); {
-}
+//     showHighScores(); {
+// }
 
-var i = 0;
-function showHighScores( {
+// var i = 0;
+// function showHighScores( {
 
-    var savedHighScores = localStorage.getItem("high scores");
-       if (savedHighScores === null) {
-        return;
-       }
-       console.log(savedHighScores);
+    // var savedHighScores = localStorage.getItem("high scores");
+    //    if (savedHighScores === null) {
+    //     return;
+    //    }
+    //    console.log(savedHighScores);
 
-       var storedHighScores = JSON.parse(savedHighScores);
+    //    var storedHighScores = JSON.parse(savedHighScores);
 
-       for (; i < storedHighScores.length; i++) {
-        var eachNewHighScore = document.createElement("p");
-        eachNewHighScore.innerHTML = storedHighScores[i].initials + ":" + storedHighScores[i].score;
-        listOfHighScores.appendChild(eachNewHighScore);
+//        for (i < storedHighScores.length; i++) {
+//         var eachNewHighScore = document.createElement("p");
+//         eachNewHighScore.innerHTML = storedHighScores[i].initials + ":" + storedHighScores[i].score;
+//         listOfHighScores.appendChild(eachNewHighScore);
         
-       }
-})
+//        }
+// })
+
+initialInput.addEventListener("click", function(){
+    storeHighScores(event);
+});
+
 
