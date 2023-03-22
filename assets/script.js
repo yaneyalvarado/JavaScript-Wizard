@@ -188,17 +188,6 @@ function showHighScores() {
        if (savedHighScores === null) {
         return;
        }
-    //    console.log(savedHighScores);
-
-    //    var storedHighScores = JSON.parse(savedHighScores);
-    //    console.log(storedHighScores)
-
-    //    for (i = 0; i< storedHighScores.length; i++) {
-    //     var eachNewHighScore = document.createElement("p");
-    //     eachNewHighScore.innerHTML = storedHighScores[i].initials + ":" + storedHighScores[i].score;
-    //     listOfHighScores.appendChild(eachNewHighScore);
-        
-    //    }
 }
 
 initialInput.addEventListener("click", function(){
